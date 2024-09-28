@@ -1,16 +1,14 @@
 function printReport(pages) {
-  console.log("===========");
-  console.log("BEGIN REPORT");
-  console.log("===========");
+  console.log("===========BEGIN REPORT===========");
+
   const sortedPages = sortPages(pages);
   for (const sortedPage of sortedPages) {
     const urls = sortedPage[0];
     const hits = sortedPage[1];
     console.log(`Found ${hits} links to page : ${urls}`);
   }
-  console.log("===========");
-  console.log("END REPORT");
-  console.log("===========");
+
+  console.log("===========END REPORT===========");
 }
 
 function sortPages(pages) {
